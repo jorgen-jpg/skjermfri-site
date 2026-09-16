@@ -1,0 +1,2 @@
+# Cloudflare Pages / Netlify: every tag link serves the landing page (the app intercepts it when installed).
+/t/*  /t/index.html  200

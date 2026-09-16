@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["22TC3C9VAF.no.fjeldbergwesterlin.brikke"],
+        "components": [
+          { "/": "/t/*", "comment": "Tag links open the app" }
+        ]
+      }
+    ]
+  }
+}
