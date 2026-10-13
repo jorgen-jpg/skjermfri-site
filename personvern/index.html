@@ -3,46 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Personvern - pause</title>
+  <title>Personvern – pause</title>
   <style>
     :root { color-scheme: light dark; }
     body { margin: 0; font-family: -apple-system, system-ui, sans-serif; background: #f6f4ee; color: #1c1b19; }
+    main { max-width: 40rem; margin: auto; padding: 40px 20px; }
+    p, li { line-height: 1.6; } h2 { margin-top: 2rem; } a { color: inherit; text-underline-offset: 3px; }
+    .note { border-left: 3px solid #a76b37; padding-left: 16px; }
     @media (prefers-color-scheme: dark) { body { background: #111; color: #eee; } }
-    main { max-width: 40rem; margin: 0 auto; padding: 48px 20px; }
-    p, li { line-height: 1.5; }
   </style>
 </head>
-<body>
-  <main>
-    <h1>Personvernerklæring for pause-appen</h1>
-    <p>Sist oppdatert: 16. september 2026.</p>
+<body><main>
+  <h1>Personvern i pause</h1>
+  <p>Sist oppdatert: 13. oktober 2026.</p>
+  <p><strong>Du trenger ingen konto.</strong> pause har ingen innlogging, annonser eller egen analysesporing. Appvalg, skjermtid og pausehistorikk behandles på iPhonen din. TestFlight og henvendelser til oss beskrives separat nedenfor.</p>
+  <p><a href="#sletting">Slik sletter du data</a> · <a href="/beta/">Kort informasjon til betatestere og foreldre</a></p>
 
-    <h2>Kort versjon</h2>
-    <p>Appen samler ikke inn personopplysninger. Den har ingen konto, ingen innlogging og ingen server som mottar data fra telefonen din.</p>
+  <h2>Dette brukes på telefonen</h2>
+  <ul>
+    <li><strong>Brikker og moduser:</strong> brikkens ID, navnene du velger og Apples kodede referanser til valgte apper, kategorier og nettsteder. Dette gjør at brikken kan starte og avslutte riktig pause.</li>
+    <li><strong>Pausehistorikk:</strong> start, slutt, varighet og hvordan pausen ble avsluttet. Appen beholder maksimalt de siste 1 000 øktene, til du sletter historikken eller appen.</li>
+    <li><strong>Skjermtid:</strong> Apples skjermtidsrapport viser blant annet tidsbruk og antall opplåsinger. Rapporten behandles i Apples beskyttede rapportutvidelse. Vi mottar ikke denne rapporten eller en liste over appene du bruker.</li>
+    <li><strong>Feilsøking:</strong> en lokal logg med de siste 100 tekniske hendelsene. Den kan inneholde tidspunkt, feil og brikkeidentifikatorer. Den lastes ikke automatisk opp av pause.</li>
+  </ul>
+  <p>Opplysningene brukes for å levere funksjonene du ber om. Appen har ingen egen skysynkronisering. Appdata kan inngå i sikkerhetskopien du har valgt for iPhonen.</p>
 
-    <h2>Hva appen lagrer på telefonen</h2>
-    <ul>
-      <li>Hvilke brikker du har paret (brikkens serienummer og et navn du velger).</li>
-      <li>Profilene dine. Apple gir appen anonyme, kodede referanser til appene du velger. Appen kan ikke se hvilke apper det er, og referansene forlater aldri telefonen.</li>
-      <li>Økthistorikk (start, slutt, varighet, om økten ble åpnet med brikke eller nødåpning).</li>
-      <li>En kort teknisk logg (siste hendelser i appen, uten personopplysninger) som du selv kan velge å sende oss ved feil.</li>
-    </ul>
-    <p>Alt dette ligger i appens eget lagringsområde på iPhone. Det synkroniseres ikke til iCloud av appen. Sletter du appen, slettes dataene.</p>
+  <h2>Når du tester via TestFlight</h2>
+  <p>Vi bruker e-postadressen og eventuelt navnet du gir oss til å invitere deg og administrere testen. Apple deler også teststatus, appversjon, enhets- og systeminformasjon, bruk av <em>pause-betaappen</em>, krasj og tilbakemeldinger med oss. Dette er ikke skjermtiden din i andre apper.</p>
+  <p>Vi bruker dette til å gjennomføre testen og rette feil, ikke til markedsføring. Testeroppføringen beholdes mens du deltar, og fjernes når du ber om det eller testperioden avsluttes. Eventuelle egne kopier av feilrapporter slettes når saken er løst. Apple styrer lagringen i TestFlight; tilbakemeldinger lagres normalt i ett år, og krasj- og bruksdata kan beholdes til feil er løst. Se <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">Apples informasjon om TestFlight og personvern</a>.</p>
 
-    <h2>Skjermtid-tilgang</h2>
-    <p>Appen bruker Apples Screen Time-rammeverk (Family Controls) for å sette apper du selv velger på pause, på din egen enhet. Apple krever at slik bruksdata aldri brukes til annonsering eller deles med databroker. Vi bruker den ikke til noe annet enn pausen.</p>
+  <h2>Når du kontakter oss</h2>
+  <p>Vi mottar e-postadressen din og det du selv sender. «Rapporter et problem» lar deg se en rapport med telefonmodell, iOS-versjon og de siste 40 logghendelsene før du sender den. Fjern gjerne detaljer du ikke vil dele. Vi bruker henvendelsen til å hjelpe deg og sletter den når saken er løst, med mindre vi må beholde noe for en konkret rettslig plikt eller et rettskrav.</p>
+  <p>Behandlingsgrunnlaget for å levere avtalte funksjoner er personvernforordningen artikkel 6 nr. 1 bokstav b. For testadministrasjon, feilsøking og kundestøtte er grunnlaget vår berettigede interesse i å drive en fungerende og trygg tjeneste, bokstav f. Du kan protestere mot slik behandling. Vi ber ikke om fødselsdato eller flere kontaktopplysninger enn testen krever.</p>
 
-    <h2>Hva vi mottar</h2>
-    <p>Ingenting automatisk. Velger du «Rapporter et problem», lager appen en e-post med iOS-versjon, telefonmodell og den tekniske loggen. Den sendes bare hvis du sender den. Vi bruker den til å hjelpe deg og sletter den når saken er løst.</p>
+  <h2 id="sletting">Slette data eller slutte å teste</h2>
+  <p>Det finnes ingen pause-konto å slette. Avslutt en aktiv pause først. Du kan slette pausehistorikken i appens innstillinger, fjerne brikker og moduser, eller velge <strong>Slett app</strong> i iPhone-innstillingene for å fjerne appens lokale filer. Å bare fjerne ikonet fra Hjem-skjermen eller avlaste appen og beholde dokumenter/data er ikke det samme. Eldre sikkerhetskopier administreres separat hos Apple.</p>
+  <p>Betatestere kan ha en lokal tillatelse til å programmere brikker lagret i iPhonens nøkkelring. Den inneholder ikke navn, e-post eller skjermtid, synkroniseres ikke av appen og kan bestå etter avinstallering. Dagens app har ingen knapp som fjerner denne betatillatelsen. Vi kan ikke fjernslette den eller andre lokale data.</p>
+  <p>For sletting av opplysninger hos oss eller fjerning fra testerlisten: skriv til <a href="mailto:hei@taenpause.no?subject=Sletting%20av%20testdata">hei@taenpause.no</a>. Du kan også be om innsyn, retting, begrensning og, der det gjelder, dataportabilitet. Vi svarer normalt innen én måned. Apples egne data kan du administrere på <a href="https://privacy.apple.com/">privacy.apple.com</a>. Du kan klage til <a href="https://www.datatilsynet.no/">Datatilsynet</a>.</p>
 
-    <h2>Nettbutikken</h2>
-    <p>Brikken selges separat. Kjøp, betaling og levering håndteres utenfor appen og har egen personvernerklæring der brikken kjøpes.</p>
-
-    <h2>Dine rettigheter</h2>
-    <p>Du kan når som helst slette alt ved å slette appen. Spørsmål: hei@taenpause.no.</p>
-
-    <h2>Behandlingsansvarlig</h2>
-    <p>Fjeldberg Westerlin AS, org.nr 924 462 965, Behrens' gate 5, 0257 Oslo, Norge. E-post: hei@taenpause.no.</p>
-  </main>
-</body>
+  <h2>Nettsted, kjøp og leverandører</h2>
+  <p>Disse informasjonssidene bruker ikke analyseverktøy eller markedsføringscookies. GitHub Pages leverer siden og kan behandle IP-adresse og tekniske forespørselsdata for drift og sikkerhet, etter <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubs personvernerklæring</a>. Apple leverer TestFlight, og Google Workspace håndterer e-posten vår. Leverandørenes tjenester kan behandle data utenfor EØS; deres personvernerklæringer beskriver vern og overføringsgrunnlag. Kjøp og levering av brikker har egen personvernerklæring i <a href="https://pauseapp.no/policies/privacy-policy">nettbutikken</a>.</p>
+  <h2>Hvem er ansvarlig?</h2>
+  <p>Fjeldberg Westerlin AS, org.nr. 924 462 965, Behrens' gate 5, 0257 Oslo, Norge. Kontakt: <a href="mailto:hei@taenpause.no">hei@taenpause.no</a>.</p>
+</main></body>
 </html>
